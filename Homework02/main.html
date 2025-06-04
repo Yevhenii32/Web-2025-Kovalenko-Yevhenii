@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="app">
+    <div class="card">
+      <div class="input-group">
+        <input type="text" placeholder="Назва товару">
+        <button>Додати</button>
+      </div>
+
+      <div class="item">
+        <div class="item-row">
+          <span class="item-name bought">Помідори</span>
+          <div class="counter-wrapper">
+            <span class="qty">2</span>
+          </div>
+          <div class="actions">
+            <button class="status-btn" data-tooltip="Позначити як не куплене">Не куплено</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-row">
+          <span class="item-name">Печиво</span>
+          <div class="counter-wrapper">
+            <div class="counter-controls">
+              <button data-tooltip="Зменшити" class="btn red">−</button>
+              <span class="qty">2</span>
+              <button class="btn green" data-tooltip="Збільшити">+</button>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="status-btn" data-tooltip="Позначити як куплене">Куплено</button>
+            <button class="btn remove" data-tooltip="Видалити">×</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-row">
+          <input type="text" value="Сир" class="item-name" style="padding: 5px; background: #f1f1f1; border: 1px solid #ccc; border-radius: 4px; width: 150px;">
+          <div class="counter-wrapper">
+            <div class="counter-controls">
+              <button data-tooltip="Зменшити" class="btn red">−</button>
+              <span class="qty">1</span>
+              <button class="btn green" data-tooltip="Збільшити">+</button>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="status-btn" data-tooltip="Позначити як куплене">Куплено</button>
+            <button class="btn remove" data-tooltip="Видалити">×</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Залишилося</h3>
+      <div class="badge-list">
+        <div class="badge">
+          <span>Печиво</span>
+          <span class="count">2</span>
+        </div>
+        <div class="badge">
+        <span>Сир</span>   
+          <span class="count">1</span>
+        </div>
+      </div>
+      <h3>Куплено</h3>
+      <div class="badge-list">
+        <div class="badge"><span><s>Помідори</s></span> <span class="count">2</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-badge"><span>BuyList</span></div>
+</body>
+</html>
