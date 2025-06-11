@@ -152,7 +152,7 @@
     }
     .footer-badge:hover {
       bottom: 20px;
-      background-color: #7b1fa2;
+      background-color: #082384;
     }
     .footer-badge::after {
       content: 'Kovalenko Yevhenii';
